@@ -7,6 +7,16 @@ $("#calendarr").calendarWidget({
 	/*month: 5,
 	year: 2009						  */
  });
+
+var batteryLevel = 100;
+$(".batterylevel").css("width", batteryLevel+"%");
+setInterval(function(){
+	if(batteryLevel > 8)
+	{
+		batteryLevel--;
+		$(".batterylevel").css("width", batteryLevel+"%");
+	}
+}, 60000);
  
 var v, up=0,down=0,i=0, menu=0
                     //,$idir = $("div.idir")
