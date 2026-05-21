@@ -1,10 +1,8 @@
 # Steve Jobs iPod Tribute
 
-## [Open The Restored iPod](https://ibvildthings.github.io/Steve-Jobs-iPod-Tribute/)
+## [Launch The iPod](https://ibvildthings.github.io/Steve-Jobs-iPod-Tribute/)
 
 <a href="https://ibvildthings.github.io/Steve-Jobs-iPod-Tribute/"><img src="iPod.png" alt="Steve Jobs iPod Tribute screenshot" width="520"></a>
-
-[View this project on GitHub](https://github.com/ibvildthings/Steve-Jobs-iPod-Tribute)
 
 In 2012, on the first anniversary of Steve Jobs' passing, I created a working first-generation iPod in HTML and CSS as a small tribute to him.
 
