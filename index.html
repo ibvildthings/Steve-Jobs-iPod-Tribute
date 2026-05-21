@@ -1,0 +1,824 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>iPod - A tribute to Steve Jobs</title>
+</head>
+<meta name="viewport" content="width=500, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--number-based width or "device-width"-->
+<meta name="description" content="A restored 2012 HTML5 iPod tribute to Steve Jobs by Pritesh Desai." />
+
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.knob.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jqClock.js"></script>
+<script src="js/jquery.calendar-widget.js"></script>
+<link href="css/style.css" rel="stylesheet"/>
+<link rel="image_src" href="iPod.png" /> 
+
+<body>
+<div id="bar">
+<p>To use it, drag (rotate) the clickwheel, as you would do on a real iPod. <a href="https://github.com/ibvildthings/Steve-Jobs-iPod-Tribute#readme">Read the story behind this restoration.</a>
+</div>
+
+<div id="footer">
+<p>Restored by Pritesh Desai as a memory of a 2012 tribute to Steve Jobs. <a href="https://github.com/ibvildthings/Steve-Jobs-iPod-Tribute#readme">View the GitHub project.</a>
+</div>
+<div id="container">
+	<div id="ipod">
+		<div id="screen">
+			<div id="playindicator"></div>
+			<div id="pauseindicator">
+				<div class="pausebar"></div>
+				<div class="pausebar"></div>
+			</div>
+			
+		
+			<div class="batterytip"></div>
+			<div class="battery">||||</div>
+			
+		<div id="homemenu" class="tile">
+			<div class="title">
+				<span>iPod</span> 
+			</div>
+			<ul>
+			<a href="#playlists"><li>Playlists</li>
+			<span class="arrow">></span></a>
+			<a href="#browse"><li>Browse</li>
+			<span class="arrow">></span></a>
+			<a href="#extras"><li>Extras</li>
+			<span class="arrow">></span></a>
+			<a href="#settings"><li>Settings</li>
+			<span class="arrow">></span></a>
+			<a href="#about"><li>About</li>
+			<span class="arrow">></span></a>
+			<a href="#audioplayer"><li>Now Playing</li>
+			<span class="arrow">></span></a>
+			</ul>
+		</div>
+		
+		<div id="playlists" class="tile">
+			<div class="title">
+				<span>Playlists</span> 
+			</div>
+			<ul>
+			<a href="#favorites"><li>Favorites</li>
+			<span class="arrow">></span></a>
+			<a href="#mondaymorning"><li>Monday Morning</li>
+			<span class="arrow">></span></a>
+			<!--
+			<a href="#playlists"><li>Party Mix</li></a>
+			<a href="#playlists"><li>Road Trip</li></a>
+			-->
+			</ul>
+		</div>
+		
+		<div id="browse" class="tile">
+			<div class="title">
+				<span>Browse</span> 
+			</div>
+			<ul>
+			<a href="#artists"><li>Artist</li>
+			<span class="arrow">></span></a>
+			<a href="#album"><li>Album</li>
+			<span class="arrow">></span></a>
+			<a href="#title"><li>Title</li>
+			<span class="arrow">></span></a>
+			<a href="#genre"><li>Genre</li>
+			<span class="arrow">></span></a>
+			<!--
+			<a href="#composer"><li>Composer</li>
+			<span class="arrow">></span></a>
+			-->
+			</ul>
+		</div>
+		
+		<div id="extras" class="tile">
+			<div class="title">
+				<span>Extras</span> 
+			</div>
+			<ul>
+			<a href="#clock"><li>Clock</li></a>
+			<a href="#contacts"><li>GitHub</li></a>
+			<a href="#calendar"><li>Calendar</li></a>
+			<!--<a href="#game"><li>Game</li></a>-->
+			</ul>
+		</div>
+		
+		<div id="settings" class="tile">
+			<div class="title">
+				<span>Settings</span> 
+			</div>
+			<ul>
+			<a href="#cookie"><li>Shuffle</li></a>
+			<a href="#cookie"><li>Repeat</li></a>
+			<a href="#cookie"><li>Backlight Timer</li></a>
+			<a href="#cookie"><li>Contrast</li></a>
+			<a href="#cookie"><li>Clicker</li></a>
+			<a href="#cookie"><li>Sleep Timer</li></a>
+			</ul>
+		</div>
+
+
+<div id="artists" class="tile">
+			<div class="title">
+				<span>Artists</span> 
+			</div>
+			<ul>
+			<!--
+			<a href="#artists-all"><li>All</li>
+			<span class="arrow">></span></a>
+			-->
+			<a href="#artists-joshwoodward"><li>Josh Woodward</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-blueducks"><li>Blue Ducks</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-blankandkytt"><li>Blank &amp; Kytt</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-thephoenixtrap"><li>The Phoenix Trap</li>
+			<span class="arrow">></span></a>
+</div>
+
+
+<!--artist-->
+<div id="artists-joshwoodward" class="tile">
+			<div class="title">
+				<span>Josh Woodward</span> 
+			</div>
+			<ul>
+			<a href="#artists-joshwoodward-all"><li>All</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-joshwoodward-tw"><li>The Wake</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-joshwoodward-ashes"><li>Ashes</li>
+			<span class="arrow">></span></a>
+			</ul>
+		</div>
+		
+<div id="artists-blueducks" class="tile">
+			<div class="title">
+				<span>Blue Ducks</span> 
+			</div>
+			<ul>
+			<a href="#artists-blueducks-six"><li>All</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-blueducks-six"><li>Six</li>
+			<span class="arrow">></span></a>
+			</ul>
+		</div>
+		
+<div id="artists-blankandkytt" class="tile">
+			<div class="title">
+				<span>Blank &amp; Kytt</span> 
+			</div>
+			<ul>
+			<a href="#artists-blankandkytt-hcs"><li>All</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-blankandkytt-hcs"><li>Heavy, Crazy, Serious</li>
+			<span class="arrow">></span></a>
+			</ul>
+		</div>
+		
+<div id="artists-thephoenixtrap" class="tile">
+			<div class="title">
+				<span>The Phoenix Trap</span> 
+			</div>
+			<ul>
+			<a href="#artists-thephoenixtrap-thephoenixtrap"><li>All</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-thephoenixtrap-thephoenixtrap"><li>The Phoenix Trap</li>
+			<span class="arrow">></span></a>
+			</ul>
+		</div>
+			
+<!--albums-->
+			
+		<div id="artists-joshwoodward-tw" class="tile play">
+			<div class="title">
+				<span>The Wake</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "1 of 3"
+			data-title = "I Will Not Let You Let Me Down"
+			><li>I Will Not Let You Let Me Down</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-02-ThisIsEverything"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "2 of 3"
+			data-title = "This Is Everything"
+			><li>This Is Everything</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-07-InvisibleLight"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "3 of 3"
+			data-title = "Invisible Light"
+			><li>Invisible Light</li></a>
+			
+			</ul>
+		</div>
+
+
+		<div id="artists-joshwoodward-ashes" class="tile play">
+			<div class="title">
+				<span>Ashes</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/josh-wood/ashes/JoshWoodward-Ashes-01-LetItIn"
+			data-artist = "Josh Woodward"
+			data-album = "Ashes"
+			data-trackno = "1 of 2"
+			data-title = "Let It In"
+			><li>Let It In</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/ashes/JoshWoodward-Ashes-09-Pompeii"
+			data-artist = "Josh Woodward"
+			data-album = "Ashes"
+			data-trackno = "2 of 2"
+			data-title = "Pompeii"
+			><li>Pompeii</li></a>
+			
+			</ul>
+		</div>
+
+
+
+
+		<div id="artists-joshwoodward-all" class="tile play">
+			<div class="title">
+				<span>Josh Woodward</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "1 of 5"
+			data-title = "I Will Not Let You Let Me Down"
+			><li>I Will Not Let You Let Me Down</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-02-ThisIsEverything"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "2 of 5"
+			data-title = "This Is Everything"
+			><li>This Is Everything</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-07-InvisibleLight"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "3 of 5"
+			data-title = "Invisible Light"
+			><li>Invisible Light</li></a>
+			<a href="#audioplayer" 
+			data-url="song/josh-wood/ashes/JoshWoodward-Ashes-01-LetItIn"
+			data-artist = "Josh Woodward"
+			data-album = "Ashes"
+			data-trackno = "4 of 5"
+			data-title = "Let It In"
+			><li>Let It In</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/ashes/JoshWoodward-Ashes-09-Pompeii"
+			data-artist = "Josh Woodward"
+			data-album = "Ashes"
+			data-trackno = "5 of 5"
+			data-title = "Pompeii"
+			><li>Pompeii</li></a>			
+			</ul>
+		</div>
+
+<!--Blue Ducks Six -->
+
+		<div id="artists-blueducks-six" class="tile play">
+			<div class="title">
+				<span>Six</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/blue-ducks/six/Blue_Ducks_-_02_-_Four_Floss_Five_Six"
+			data-artist = "Blue Ducks"
+			data-album = "Six"
+			data-trackno = "1 of 2"
+			data-title = "Four Floss Five Six"
+			><li>Four Floss Five Six</li></a>
+			<a href="#audioplayer"
+			data-url="song/blue-ducks/six/Blue_Ducks_-_03_-_Floss_Is_Full_Of_Surprises"
+			data-artist = "Blue Ducks"
+			data-album = "Six"
+			data-trackno = "2 of 2"
+			data-title = "Floss Is Full Of Surprises"
+			><li>Floss Is Full Of Surprises</li></a>
+			
+			</ul>
+		</div>
+
+<!--Blank & Kytt -->
+
+		<div id="artists-blankandkytt-hcs" class="tile play">
+			<div class="title">
+				<span>Heavy, Crazy, Serious</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_02_-_Jangle"
+			data-artist = "Blank &amp; Kytt"
+			data-album = "Heavy, Crazy, Serious"
+			data-trackno = "1 of 2"
+			data-title = "Jangle"
+			><li>Jangle</li></a>
+			<a href="#audioplayer"
+			data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_07_-_Flava"
+			data-artist = "Blank &amp; Kytt"
+			data-album = "Heavy, Crazy, Serious"
+			data-trackno = "2 of 2"
+			data-title = "Flava"
+			><li>Flava</li></a>
+			
+			</ul>
+		</div>
+		
+<!--The Phoenix Trap -->
+
+		<div id="artists-thephoenixtrap-thephoenixtrap" class="tile play">
+			<div class="title">
+				<span>Heavy, Crazy, Serious</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/the-phoenix-trap/the-phoenix-trap/youre-on-fire"
+			data-artist = "The Phoenix Trap"
+			data-album = "The Phoenix Trap"
+			data-trackno = "1 of 3"
+			data-title = "You're On Fire"
+			><li>You're On Fire</li></a>
+			<a href="#audioplayer"
+			data-url="song/the-phoenix-trap/the-phoenix-trap/something-lasting"
+			data-artist = "The Phoenix Trap"
+			data-album = "The Phoenix Trap"
+			data-trackno = "2 of 3"
+			data-title = "Something Lasting"
+			><li>Something Lasting</li></a>
+			<a href="#audioplayer"
+			data-url="song/the-phoenix-trap/the-phoenix-trap/i-wish-it-would-rain"
+			data-artist = "The Phoenix Trap"
+			data-album = "The Phoenix Trap"
+			data-trackno = "3 of 3"
+			data-title = "I Wish It Would Rain"
+			><li>I Wish It Would Rain</li></a>
+			
+			</ul>
+		</div>
+
+		
+<div id="album" class="tile">
+	<div class="title">
+		<span>Albums</span> 
+	</div>
+	<ul>
+	<a href="#artists-joshwoodward-tw"><li>The Wake</li>
+	<span class="arrow">></span></a>
+	<a href="#artists-joshwoodward-ashes"><li>Ashes</li>
+	<span class="arrow">></span></a>
+	
+	<a href="#artists-blueducks-six"><li>Six</li>
+	<span class="arrow">></span></a>
+	
+	<a href="#artists-blankandkytt-hcs"><li>Heavy, Crazy, Serious</li>
+	<span class="arrow">></span></a>
+	
+	<a href="#artists-thephoenixtrap-thephoenixtrap"><li>The Phoenix Trap</li>
+	<span class="arrow">></span></a>
+	
+	</ul>
+
+</div>
+
+<!-- Songs-->
+<div id="title" class="tile play">
+	<div class="title">
+		<span>Songs</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer" 
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "1 of 3"
+		data-title = "I Will Not Let You Let Me Down"
+		><li>I Will Not Let You Let Me Down</li></a>
+		<a href="#audioplayer"
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-02-ThisIsEverything"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "2 of 3"
+		data-title = "This Is Everything"
+		><li>This Is Everything</li></a>
+		<a href="#audioplayer"
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-07-InvisibleLight"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "3 of 3"
+		data-title = "Invisible Light"
+		><li>Invisible Light</li></a>
+		<a href="#audioplayer" 
+		data-url="song/josh-wood/ashes/JoshWoodward-Ashes-01-LetItIn"
+		data-artist = "Josh Woodward"
+		data-album = "Ashes"
+		data-trackno = "1 of 2"
+		data-title = "Let It In"
+		><li>Let It In</li></a>
+		<a href="#audioplayer"
+		data-url="song/josh-wood/ashes/JoshWoodward-Ashes-09-Pompeii"
+		data-artist = "Josh Woodward"
+		data-album = "Ashes"
+		data-trackno = "2 of 2"
+		data-title = "Pompeii"
+		><li>Pompeii</li></a>
+		<a href="#audioplayer" 
+		data-url="song/blue-ducks/six/Blue_Ducks_-_02_-_Four_Floss_Five_Six"
+		data-artist = "Blue Ducks"
+		data-album = "Six"
+		data-trackno = "1 of 2"
+		data-title = "Four Floss Five Six"
+		><li>Four Floss Five Six</li></a>
+		<a href="#audioplayer"
+		data-url="song/blue-ducks/six/Blue_Ducks_-_03_-_Floss_Is_Full_Of_Surprises"
+		data-artist = "Blue Ducks"
+		data-album = "Six"
+		data-trackno = "2 of 2"
+		data-title = "Floss Is Full Of Surprises"
+		><li>Floss Is Full Of Surprises</li></a>
+		<a href="#audioplayer" 
+		data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_02_-_Jangle"
+		data-artist = "Blank &amp; Kytt"
+		data-album = "Heavy, Crazy, Serious"
+		data-trackno = "1 of 2"
+		data-title = "Jangle"
+		><li>Jangle</li></a>
+		<a href="#audioplayer"
+		data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_07_-_Flava"
+		data-artist = "Blank &amp; Kytt"
+		data-album = "Heavy, Crazy, Serious"
+		data-trackno = "2 of 2"
+		data-title = "Flava"
+		><li>Flava</li></a>
+		<a href="#audioplayer" 
+		data-url="song/the-phoenix-trap/the-phoenix-trap/youre-on-fire"
+		data-artist = "The Phoenix Trap"
+		data-album = "The Phoenix Trap"
+		data-trackno = "1 of 3"
+		data-title = "You're On Fire"
+		><li>You're On Fire</li></a>
+		<a href="#audioplayer"
+		data-url="song/the-phoenix-trap/the-phoenix-trap/something-lasting"
+		data-artist = "The Phoenix Trap"
+		data-album = "The Phoenix Trap"
+		data-trackno = "2 of 3"
+		data-title = "Something Lasting"
+		><li>Something Lasting</li></a>
+		<a href="#audioplayer"
+		data-url="song/the-phoenix-trap/the-phoenix-trap/i-wish-it-would-rain"
+		data-artist = "The Phoenix Trap"
+		data-album = "The Phoenix Trap"
+		data-trackno = "3 of 3"
+		data-title = "I Wish It Would Rain"
+		><li>I Wish It Would Rain</li></a>
+	</ul>
+</div>
+<!--Genres -->		
+<div id="genre" class="tile">
+	<div class="title">
+		<span>Genre</span> 
+	</div>
+	<ul>
+	<a href="#genre-alternative"><li>Alternative</li>
+	<span class="arrow">></span></a>
+	<a href="#genre-rock"><li>Rock</li>
+	<span class="arrow">></span></a>
+	<a href="#genre-hiphop"><li>Hip-Hop Beats</li>
+	<span class="arrow">></span></a>
+	</ul>
+</div>	
+<!--genre alternative -->		
+<div id="genre-alternative" class="tile play">
+	<div class="title">
+		<span>Alternative</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer"
+		data-url="song/the-phoenix-trap/the-phoenix-trap/i-wish-it-would-rain"
+		data-artist = "The Phoenix Trap"
+		data-album = "The Phoenix Trap"
+		data-trackno = "1 of 2"
+		data-title = "I Wish It Would Rain"
+		><li>I Wish It Would Rain</li></a>	
+		
+		<a href="#audioplayer"
+		data-url="song/the-phoenix-trap/the-phoenix-trap/something-lasting"
+		data-artist = "The Phoenix Trap"
+		data-album = "The Phoenix Trap"
+		data-trackno = "2 of 2"
+		data-title = "Something Lasting"
+		><li>Something Lasting</li></a>
+	</ul>
+</div>	
+<!--genre rock -->		
+<div id="genre-rock" class="tile play">
+	<div class="title">
+		<span>Rock</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer" 
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "1 of 2"
+		data-title = "I Will Not Let You Let Me Down"
+		><li>I Will Not Let You Let Me Down</li></a>
+		
+		<a href="#audioplayer"
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-02-ThisIsEverything"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "2 of 2"
+		data-title = "This Is Everything"
+		><li>This Is Everything</li></a>
+	</ul>
+</div>	
+
+<!--genre hiphop -->		
+<div id="genre-hiphop" class="tile play">
+	<div class="title">
+		<span>Hip Hop</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer" 
+		data-url="song/blue-ducks/six/Blue_Ducks_-_02_-_Four_Floss_Five_Six"
+		data-artist = "Blue Ducks"
+		data-album = "Six"
+		data-trackno = "1 of 3"
+		data-title = "Four Floss Five Six"
+		><li>Four Floss Five Six</li></a>
+		
+		<a href="#audioplayer"
+		data-url="song/blue-ducks/six/Blue_Ducks_-_03_-_Floss_Is_Full_Of_Surprises"
+		data-artist = "Blue Ducks"
+		data-album = "Six"
+		data-trackno = "2 of 3"
+		data-title = "Floss Is Full Of Surprises"
+		><li>Floss Is Full Of Surprises</li></a>
+		
+		<a href="#audioplayer"
+		data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_07_-_Flava"
+		data-artist = "Blank &amp; Kytt"
+		data-album = "Heavy, Crazy, Serious"
+		data-trackno = "3 of 3"
+		data-title = "Flava"
+		><li>Flava</li></a>
+	</ul>
+</div>	
+
+
+<!--Favorites -->
+<div id="favorites" class="tile play">
+	<div class="title">
+		<span>Favorites</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer" 
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "1 of 2"
+		data-title = "I Will Not Let You Let Me Down"
+		><li>I Will Not Let You Let Me Down</li></a>	
+		
+		<a href="#audioplayer"
+		data-url="song/josh-wood/ashes/JoshWoodward-Ashes-09-Pompeii"
+		data-artist = "Josh Woodward"
+		data-album = "Ashes"
+		data-trackno = "2 of 2"
+		data-title = "Pompeii"
+		><li>Pompeii</li></a>
+	</ul>		
+</div>
+
+
+<!--mondaymorning -->
+<div id="mondaymorning" class="tile play">
+	<div class="title">
+		<span>Monday Morning</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer" 
+		data-url="song/blue-ducks/six/Blue_Ducks_-_02_-_Four_Floss_Five_Six"
+		data-artist = "Blue Ducks"
+		data-album = "Six"
+		data-trackno = "1 of 2"
+		data-title = "Four Floss Five Six"
+		><li>Four Floss Five Six</li></a>
+		
+		<a href="#audioplayer"
+		data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_07_-_Flava"
+		data-artist = "Blank &amp; Kytt"
+		data-album = "Heavy, Crazy, Serious"
+		data-trackno = "2 of 2"
+		data-title = "Flava"
+		><li>Flava</li></a>
+	</ul>
+</div>
+	
+	
+<!--About-->
+<div id="about" class="tile">
+	<div class="title">
+		<span>About</span> 
+	</div>
+	<ul>
+	This iPod is a tribute to Steve Jobs.
+	<br>
+	To read the story behind this restoration <a href="https://github.com/ibvildthings/Steve-Jobs-iPod-Tribute#readme">click here with your mouse.</a>
+	</ul>
+</div>	
+
+<!--Clock-->
+<div id="clock" class="tile">
+	<div class="title">
+		<span>Clock</span> 
+	</div>
+	
+	<div id="time">
+	</div>
+</div>
+
+<!--GitHub-->
+<div id="contacts" class="tile">
+	<div class="title">
+		<span>GitHub</span> 
+	</div>
+	<ul>
+	<li>
+		Pritesh Desai
+	</li>
+	<li>
+		2012 HTML5 iPod tribute
+	</li>
+	<li>
+		Restored on GitHub
+	</li>
+	<li>
+		github.com/ibvildthings/Steve-Jobs-iPod-Tribute
+	</li>
+	</ul>
+</div>
+
+
+<!--Calendar-->
+<div id="calendar" class="tile">
+	<div class="title">
+		<span>Calendar</span> 
+	</div>
+	
+	<div id="calendarr">
+	<p>Please enable Javascript to view this calendar.</p>
+	</div>
+
+</div>
+
+	
+	
+<!--Apple-->
+<div id="cookie" class="tile">
+	<div class="title">
+		<span>Cookie</span> 
+	</div>
+	<ul>
+	Nothing to see here, have an apple instead!
+	</ul>
+<pre>
+    _  /_
+  /  `''  \
+ |         |
+  \       /  
+   \__.__/
+</pre>
+</div>	
+
+	
+<!--audio player div -->		
+		<div id="audioplayer" class="tile">
+			<div class="title">
+				<span>Now Playing</span> 
+			</div>
+			<ul>
+			<li class="tracknumber"></li>
+			<li class="songtitle"></li>
+			<li class="songartist"></li>
+			<li class="albumtitle"></li>
+			<li class="timevolume">
+				<div class="timeline">
+				<span class="time"></span>
+				<div class="trackbar">
+					<div class="trackbartime"></div>
+				</div>
+				<div id="player"></div>
+				</div>
+				
+				<div class="volume">
+					<div class="volumeincr">
+					</div>
+					<div class="volumebar">
+						<div class="volumelevel"></div>
+					</div>
+					<div class="volumedecr"></div>
+				</div>
+				
+				<div class="scrolltime">
+					<div class="scrolltimebar">
+						<div class="scrolltimelevel"></div>
+						<span>&#9830;</span>
+					</div>
+				</div>
+				
+			</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		</div><!--end screen -->
+		
+		
+		<div id="clickwheel">
+		<div id="menu">menu</div>
+		
+		<div id="prev">
+			<div class="bar-left"></div>
+			<div class="arrow-left"></div>
+			<div class="arrow-left"></div>
+		</div>
+
+		<div id="next">
+			<div class="bar-right"></div>
+			<div class="arrow-right"></div>
+			<div class="arrow-right"></div>
+		</div>
+
+		<div id="play-pause">
+			<div class="bar-right gap"></div>
+			<div class="bar-right gap"></div>
+			<div class="arrow-right"></div>
+		</div>
+		
+		
+		
+		<a href="#" id="back">
+			<div class="button" id="topbutton"></div>
+		</a>
+		
+		<a href="#" id="playpausebutton">
+			<div class="button" id="bottombutton"></div>
+		</a>
+		
+		<a href="#" id="rewindbutton">
+			<div class="button" id="leftbutton"></div>
+		</a>
+		
+		<a href="#" id="fastforwardbutton">
+			<div class="button" id="rightbutton"></div>
+		</a>
+		
+		
+			
+			<div id="innerwheel">
+			
+			
+			<input type="text" value="75" class="dial" 
+			data-width="234"
+			data-cursor="true"
+			data-thickness=".9"
+			data-fgColor="#E9EDEC"
+			data-bgColor="#E9EDEC"
+			data-displayInput="true"
+			style=""
+			>	
+			
+			
+				<a href="#" id="select">
+				<div id="innerbutton">
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+</body>
+</html>
