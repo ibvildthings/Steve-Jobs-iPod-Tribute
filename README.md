@@ -24,6 +24,7 @@ Engadget covered the original demo in 2012:
 Additional press coverage from around the web:
 
 - [Classic iPod in Your Browser: The Best Way to Waste Your Friday](https://gizmodo.com/classic-ipod-in-your-browser-the-best-way-to-waste-you-5949300), Gizmodo, October 5, 2012
+- [You Can Now Transform Your Browser Into A Virtual iPod Classic](https://mashable.com/archive/ipod-classic-browser), Mashable, October 5, 2012
 - [You Can Now Transform Your Browser Into A Virtual iPod Classic](https://www.cultofmac.com/news/you-can-now-transform-your-browser-into-a-virtual-ipod-classic), Cult of Mac, October 5, 2012
 - [First-gen Apple iPod is resurrected in your browser](https://www.stuff.tv/news/first-gen-apple-ipod-resurrected-in-your-browser/), Stuff, October 6, 2012
 - [Un iPod original en HTML5](https://www.microsiervos.com/archivo/internet/un-ipod-original-en-hmtl5.html), Microsiervos, October 6, 2012
